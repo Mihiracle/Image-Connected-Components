@@ -25,14 +25,12 @@ Queue::~Queue() {
 
 // insert a new Location at the end/back of our list   
 void Queue::push(Location loc) {
-   // FILL THIS IN
    contents[tail] = loc; 
    tail++; 
 }
 
 // return and "remove" the oldest Location not already extracted
 Location Queue::pop() {
-   // FILL THIS IN 
    Location l; 
    l = contents[head]; 
    head++; 
@@ -41,7 +39,6 @@ Location Queue::pop() {
 
 // is this Queue empty? (did we extract everything added?)
 bool Queue::is_empty() {
-   // FILL THIS IN
    if (head == tail) { 
    	return true; 
    } else { 
